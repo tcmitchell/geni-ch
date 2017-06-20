@@ -1,3 +1,6 @@
 pyOpenSSL
 python-dateutil
 M2Crypto
+sqlalchemy
+lxml
+psycopg2
