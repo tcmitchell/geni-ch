@@ -8,13 +8,8 @@ virtualenv:
 sudo: required
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y python-m2crypto python-dateutil python-openssl
   - sudo apt-get install -y libxmlsec1 xmlsec1 libxmlsec1-openssl libxmlsec1-dev
-  - sudo apt-get install -y python-sqlalchemy python-lxml python-psycopg2
 before_script:
-  - python -c 'import sys; print sys.path'
-  - ls /usr/lib/python2.7/dist-packages
-  - ls /usr/lib/python2.7/dist-packages/OpenSSL
   - wget https://github.com/GENI-NSF/geni-tools/archive/v2.10.tar.gz -O /tmp/geni-tools.tar.gz
   - tar -xf /tmp/geni-tools.tar.gz -C /tmp
   - export PYTHONPATH=$PYTHONPATH:/tmp/geni-tools-2.10/src
