@@ -1,6 +1,8 @@
-pyOpenSSL
-python-dateutil
-M2Crypto
-sqlalchemy
-lxml
-psycopg2
+# The versions below match CentOS 7 RPM versions
+# CentOS 7 is the production environment
+pyOpenSSL == 0.13.1
+python-dateutil == 1.5
+M2Crypto == 0.21.1
+sqlalchemy == 0.9.8
+lxml == 3.2.1
+psycopg2 == 2.5.1
