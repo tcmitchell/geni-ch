@@ -1,2 +1,3 @@
 pyOpenSSL
 python-dateutil
+M2Crypto
