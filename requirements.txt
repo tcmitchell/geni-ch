@@ -2,7 +2,11 @@
 # CentOS 7 is the production environment
 pyOpenSSL == 0.13.1
 python-dateutil == 1.5
-M2Crypto == 0.21.1
 sqlalchemy == 0.9.8
 lxml == 3.2.1
 psycopg2 == 2.5.1
+#
+# CentOS 7 uses M2Crypto 0.21.1, but that can't be built cleanly because
+# of an incompatibility with the way libssl-dev is installed. So we bump
+# up to 0.22.3, which is the next release after 0.21.1
+M2Crypto == 0.22.3
