@@ -1,6 +1,7 @@
 language: python
 # Force use of trusty until it is the default build
 # platform in late 2017
+# Update for 21-June Travis Trusty image update
 dist: trusty
 virtualenv:
   system_site_packages: true
